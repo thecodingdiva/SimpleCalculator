@@ -52,6 +52,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InputConverter.test.cs" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
