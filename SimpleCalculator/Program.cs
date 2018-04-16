@@ -21,6 +21,12 @@ namespace SimpleCalculator
             double secondNumber = inputConvertor.ConvertInputToNumeric(Console.ReadLine());
             string operation = Console.ReadLine();
 
+            /*result is the number after the calculation has been completed.
+            Calculate is the method from the CalculatorEngine. 
+            This method will take the 3 inputs and output the result*/
+            double result = calculatorEngine.Calculate();
+            Console.WriteLine(result);
+
         }
     }
 }
