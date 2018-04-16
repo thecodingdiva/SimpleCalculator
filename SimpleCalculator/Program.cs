@@ -10,7 +10,17 @@ namespace SimpleCalculator
     {
         static void Main(string[] args)
         {
-            
+            //This is the object that is going to convert the string input to a number
+            InputCalculator inputConvertor = new InputConverter();
+
+            //This is the engine that will perform the calculation
+            CalculatorEngine calculatorEngine = new CalculatorEngine();
+
+
+            double firstNumber = inputConvertor.ConvertInputToNumeric(Console.ReadLine());
+            double secondNumber = inputConvertor.ConvertInputToNumeric(Console.ReadLine());
+            string operation = Console.ReadLine();
+
         }
     }
 }
