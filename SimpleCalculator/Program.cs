@@ -11,14 +11,14 @@ namespace SimpleCalculator
         static void Main(string[] args)
         {
             //This is the object that is going to convert the string input to a number
-            InputConverter inputConvertor = new InputConverter();
+            InputConverter inputConverter = new InputConverter();
 
             //This is the engine that will perform the calculation
             CalculatorEngine calculatorEngine = new CalculatorEngine();
 
 
-            double firstNumber = InputConverter.ConvertInputToNumeric(Console.ReadLine());
-            double secondNumber = InputConverter.ConvertInputToNumeric(Console.ReadLine());
+            double firstNumber = inputConverter.ConvertInputToNumeric(Console.ReadLine());
+            double secondNumber = inputConverter.ConvertInputToNumeric(Console.ReadLine());
             string operation = Console.ReadLine();
 
             /*result is the number after the calculation has been completed.

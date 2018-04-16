@@ -8,6 +8,12 @@ namespace SimpleCalculator
 {
     class InputConverter
     {
-
+        public double ConvertInputToNumeric(string InputText)
+        {
+            double convertedNumber;
+            if (!double.TryParse(InputText, out convertedNumber))
+            throw new ArgumentException("Expected a numeric value");
+            return convertedNumber;
+        }
     }
 }
